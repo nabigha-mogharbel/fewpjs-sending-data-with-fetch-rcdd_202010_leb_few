@@ -12,6 +12,6 @@ function submitData(name,email){
   .then(function(object){document.body.innerHTML=object[`id`]})
   .catch(function(error) {
     alert("Bad Thinghs! Ragnarők!")
-    document.body.innerHTML=error.message ('Unauthorized Access');});
+    document.body.innerHTML=error.message });
 }
   
