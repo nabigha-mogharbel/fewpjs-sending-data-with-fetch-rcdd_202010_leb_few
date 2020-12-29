@@ -11,6 +11,7 @@ function submitData(name,email){
   .then(function(response){return response.json()})
   .then(function(object){document.body.innerHTML=object[`id`]})
   .catch(function(error) {
-    alert('Unauthorized Access');});
+    alert("Bad Thinghs! Ragnarok!")
+    document.body.innerHTML=error.message ('Unauthorized Access');});
 }
   
