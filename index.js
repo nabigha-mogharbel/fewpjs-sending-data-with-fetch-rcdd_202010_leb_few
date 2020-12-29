@@ -8,7 +8,7 @@ function submitData(name,email){
     return response.json();
   })
   
-  .then(function(response){return response.json()})
+  .then(function(response){return response.json();})
   .then(function(object){document.body.innerHTML=object['id']})
   .catch(function(error) {
     alert("Bad Thinghs! Ragnarők!")
