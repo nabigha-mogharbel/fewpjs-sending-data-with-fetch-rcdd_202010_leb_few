@@ -2,7 +2,7 @@
 
 let configuration={method: "POST",
   header: {'content-type': '/json' , 'Accept': 'application/json'},
-  body: JSON.stringify(data)};
+  body: JSON.stringify(name,email)};
 
 function submitData(name,email){
   fetch('http://localhost:3000/users',configuration)
