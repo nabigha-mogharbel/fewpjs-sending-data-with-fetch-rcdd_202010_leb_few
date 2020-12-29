@@ -1,7 +1,7 @@
 // Add your code here
 
 let configuration={method: "POST",
-  header: {'content-type': '/json' , 'Accept': 'application/json'},
+  headers: {'content-type': '/json' , 'Accept': 'application/json'},
   body: JSON.stringify(name,email)};
 
 function submitData(name,email){
