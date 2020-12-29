@@ -5,7 +5,7 @@ let configuration={method: "POST",
   body: JSON.stringify(name,email)};
 
 function submitData(name,email){
-  fetch('http://localhost:3000/users',configuration)
+  return fetch('http://localhost:3000/users',configuration)
   .then(function(response) {
     return response.json();
   })
